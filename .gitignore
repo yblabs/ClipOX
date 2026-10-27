@@ -1,0 +1,6 @@
+.venv/
+backend/.venv/
+backend/work/
+*.mp4
+__pycache__/
+.DS_Store

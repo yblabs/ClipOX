@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WayinVideo — Discover, Create, Share | AI Video Workspace</title>
+<meta name="description" content="WayinVideo is a video-native AI platform. Understand hours of video instantly, find any moment in seconds and turn long videos into viral clips.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%2304070a'/><path d='M30 32l18 36 18-36' stroke='%232bf5a0' stroke-width='10' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+</head>
+<body>
+
+<!-- ===== Promo bar ===== -->
+<div class="promo-bar" id="promoBar">
+  <span class="promo-dot"></span>
+  <strong>65% OFF</strong> annual plans — unlock premium access now!
+  <a href="pricing.html">See plans</a>
+  <button class="promo-close" id="promoClose" aria-label="Dismiss announcement">&times;</button>
+</div>
+
+<!-- ===== Header ===== -->
+<header class="site-header" id="siteHeader">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5l8 14 8-14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      Wayin<span class="brand-thin">Video</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Main">
+      <ul class="nav-list">
+        <li class="nav-item has-drop">
+          <button class="nav-link" aria-expanded="false">Products <span class="caret" aria-hidden="true"></span></button>
+          <div class="dropdown mega">
+            <div class="mega-grid">
+              <a class="mega-card" href="studio.html">
+                <span class="mega-ico">⚡</span>
+                <span><strong>AI Video Generator</strong><small>Text &amp; image to video with native audio</small></span>
+              </a>
+              <a class="mega-card" href="studio.html#editor">
+                <span class="mega-ico">✂️</span>
+                <span><strong>AI Video Editor</strong><small>Edit video like a text document</small></span>
+              </a>
+              <a class="mega-card" href="studio.html#clips">
+                <span class="mega-ico">🎬</span>
+                <span><strong>Clip Maker</strong><small>Long video to viral shorts in 30s</small></span>
+              </a>
+              <a class="mega-card" href="studio.html#summarizer">
+                <span class="mega-ico">📝</span>
+                <span><strong>Video Summarizer</strong><small>Timestamped summaries &amp; mind maps</small></span>
+              </a>
+              <a class="mega-card" href="studio.html#v2t">
+                <span class="mega-ico">💬</span>
+                <span><strong>Video to Text</strong><small>Transcripts &amp; subtitles in 100+ languages</small></span>
+              </a>
+              <a class="mega-card" href="studio.html#notes">
+                <span class="mega-ico">🧠</span>
+                <span><strong>AI Note Taker</strong><small>Structured notes from any recording</small></span>
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item has-drop">
+          <button class="nav-link" aria-expanded="false">Solutions <span class="caret" aria-hidden="true"></span></button>
+          <div class="dropdown">
+            <a class="drop-link" href="#solutions">For Marketers <span>Turn webinars into channel-ready content</span></a>
+            <a class="drop-link" href="#solutions">For Streamers <span>Highlights while you are still live</span></a>
+            <a class="drop-link" href="#solutions">For Podcasters <span>Episodes into searchable shorts</span></a>
+            <a class="drop-link" href="#solutions">For Gamers <span>Clutch plays &amp; reactions on autopilot</span></a>
+          </div>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+        <li class="nav-item"><a class="nav-link" href="#showcase">Showcase</a></li>
+        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+      </ul>
+
+      <div class="nav-cta mobile-only">
+        <a class="btn btn-ghost" href="#">Sign in</a>
+        <a class="btn btn-primary" href="pricing.html">Start Creating Free</a>
+      </div>
+    </nav>
+
+    <div class="nav-actions desktop-only">
+      <a class="btn btn-ghost" href="#">Sign in</a>
+      <a class="btn btn-primary" href="pricing.html">Start Creating Free</a>
+    </div>
+
+    <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- ===== Hero ===== -->
+<section class="hero">
+  <div class="hero-glow glow-a"></div>
+  <div class="hero-glow glow-b"></div>
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">VIDEO-NATIVE AI PLATFORM</span>
+      <h1>Discover, Create, Share</h1>
+      <p class="hero-rotator">
+        <span class="rotator" id="heroRotator" aria-live="polite">Understand hours of video instantly</span>
+      </p>
+      <p class="hero-sub">Paste a link or drop a file and WayinVideo turns it into clips, summaries, transcripts, captions, mind maps and platform-ready posts — in minutes, not hours.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary btn-lg" href="pricing.html">Start Creating Free</a>
+        <a class="btn btn-outline btn-lg" href="#features">Explore features</a>
+      </div>
+      <ul class="hero-badges">
+        <li>✦ 100 free welcome credits</li>
+        <li>✦ No credit card required</li>
+        <li>✦ No watermark on exports</li>
+      </ul>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <div class="app-window tilt">
+        <div class="app-top">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="app-title">wayinvideo · workspace</span>
+        </div>
+        <div class="app-body">
+          <div class="app-side">
+            <span class="side-item active">Find Moments</span>
+            <span class="side-item">AI Clips</span>
+            <span class="side-item">Transcript</span>
+            <span class="side-item">Summary</span>
+            <span class="side-item">Mind Map</span>
+          </div>
+          <div class="app-main">
+            <div class="player">
+              <div class="player-play">▶</div>
+              <div class="player-bar"><i style="left:8%"></i></div>
+            </div>
+            <div class="clip-row">
+              <div class="clip"><span class="clip-score">96</span><em>“This changed everything”</em></div>
+              <div class="clip"><span class="clip-score">92</span><em>“Wait for the ending…”</em></div>
+              <div class="clip"><span class="clip-score">88</span><em>“3 mistakes to avoid”</em></div>
+            </div>
+            <div class="chip-row">
+              <span class="chip chip-green">Auto captions</span>
+              <span class="chip chip-blue">9:16 reframe</span>
+              <span class="chip">100+ languages</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="float-card fc-1">⏱ 6–8 hrs saved / week</div>
+      <div class="float-card fc-2">🚀 10× faster editing</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Trust / stats ===== -->
+<section class="section trust" id="trust">
+  <div class="container">
+    <p class="trust-title">Trusted by professionals at</p>
+    <div class="logo-row" aria-hidden="true">
+      <span>NEXUS</span><span>ORBITAL</span><span>PIXELFORGE</span><span>LEVELUP</span><span>CLEARCAST</span><span>MEDIANOVA</span>
+    </div>
+
+    <div class="stat-grid">
+      <div class="stat">
+        <div class="stat-num"><span class="counter" data-to="5" data-suffix="M+">0</span></div>
+        <p>Creators across 190+ countries</p>
+      </div>
+      <div class="stat">
+        <div class="stat-num"><span class="counter" data-to="1000" data-suffix="%+">0</span></div>
+        <p>Increase in video production capacity</p>
+      </div>
+      <div class="stat">
+        <div class="stat-num"><span class="counter" data-to="17" data-suffix="×">0</span></div>
+        <p>Faster video editing workflows</p>
+      </div>
+      <div class="stat">
+        <div class="stat-num"><span class="counter" data-to="100" data-suffix="+">0</span></div>
+        <p>Languages supported for captions &amp; notes</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Showcase / categories ===== -->
+<section class="section showcase" id="showcase">
+  <div class="container section-head">
+    <span class="eyebrow">SEE WHAT YOU CAN CREATE</span>
+    <h2>One workspace for every kind of video</h2>
+    <p>Interviews, podcasts, streams, matches, product demos — import it and WayinVideo understands it.</p>
+  </div>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Interview</span><span>Sports</span><span>Podcast</span><span>Gaming</span><span>TV-Show</span><span>Anime</span><span>Coach</span><span>E-commerce</span><span>News</span><span>Vlog</span>
+      <span>Interview</span><span>Sports</span><span>Podcast</span><span>Gaming</span><span>TV-Show</span><span>Anime</span><span>Coach</span><span>E-commerce</span><span>News</span><span>Vlog</span>
+    </div>
+  </div>
+
+  <div class="container card-grid">
+    <article class="show-card reveal">
+      <div class="show-media m1">🎙️</div>
+      <h3>Podcast → shorts</h3>
+      <p>One episode becomes a week of captioned vertical clips with titles, descriptions and hashtags ready to publish.</p>
+    </article>
+    <article class="show-card reveal">
+      <div class="show-media m2">🎮</div>
+      <h3>Streams → highlights</h3>
+      <p>Clutch plays, hype moments and reactions are detected automatically while you are still live.</p>
+    </article>
+    <article class="show-card reveal">
+      <div class="show-media m3">📈</div>
+      <h3>Webinars → demand gen</h3>
+      <p>Turn demos and customer stories into reusable campaign assets across every channel.</p>
+    </article>
+    <article class="show-card reveal">
+      <div class="show-media m4">🌍</div>
+      <h3>Any video → 100+ languages</h3>
+      <p>Transcripts, subtitles and summaries translated and speaker-labelled in a single pass.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ===== Features ===== -->
+<section class="section features" id="features">
+  <div class="container section-head">
+    <span class="eyebrow">FULL POWER</span>
+    <h2>Every tool you need to understand and remix video</h2>
+    <p>Generate, clip, edit, transcribe, summarize and publish — all inside one AI video workspace.</p>
+  </div>
+
+  <div class="container feature-grid">
+    <article class="feat-card reveal">
+      <span class="feat-ico">⚡</span>
+      <h3>AI Video Generator</h3>
+      <p>Text-to-video and image-to-video with cinematic, 3D, anime and documentary styles, plus enhanced prompt mode and native audio.</p>
+      <ul>
+        <li>Text to Video &amp; Image to Video</li>
+        <li>16:9 · 9:16 · 1:1 aspect ratios</li>
+        <li>Up to 1080p HD export</li>
+      </ul>
+    </article>
+
+    <article class="feat-card reveal">
+      <span class="feat-ico">✂️</span>
+      <h3>AI Video Editor</h3>
+      <p>Edit video like a text document, or drag on a visual timeline when you want frame-level control.</p>
+      <ul>
+        <li>4K export</li>
+        <li>Text-based &amp; timeline editing</li>
+        <li>Auto B-roll and overlays</li>
+      </ul>
+    </article>
+
+    <article class="feat-card reveal">
+      <span class="feat-ico">🎬</span>
+      <h3>AI Clip Maker</h3>
+      <p>Paste a Twitch, YouTube or Zoom link and get scored, share-ready shorts in about 30 seconds.</p>
+      <ul>
+        <li>Viral moment scoring with feedback</li>
+        <li>Auto-reframe for Shorts, Reels, TikTok</li>
+        <li>Hook titles &amp; captions</li>
+      </ul>
+    </article>
+
+    <article class="feat-card reveal">
+      <span class="feat-ico">🔍</span>
+      <h3>Find Moments</h3>
+      <p>Type what you remember — “gym scene”, “laughing”, “final lap” — and jump straight to it.</p>
+      <ul>
+        <li>Semantic search across hours of footage</li>
+        <li>0.5 credit / minute after a clipping pass</li>
+        <li>Works on tutorials, AMVs, commentary</li>
+      </ul>
+    </article>
+
+    <article class="feat-card reveal">
+      <span class="feat-ico">💬</span>
+      <h3>Video to Text</h3>
+      <p>Blazing fast transcripts with punctuation, speaker labels and clickable timestamps.</p>
+      <ul>
+        <li>100+ languages &amp; translation</li>
+        <li>SRT / VTT subtitle export</li>
+        <li>Parallel cloud processing</li>
+      </ul>
+    </article>
+
+    <article class="feat-card reveal">
+      <span class="feat-ico">📝</span>
+      <h3>Video Summarizer</h3>
+      <p>Timestamped summaries, chapter breakdowns, quotable moments and a mind map of the whole recording.</p>
+      <ul>
+        <li>Timestamped, skimmable notes</li>
+        <li>Mind map &amp; Deep Questions</li>
+        <li>Chat with any video</li>
+      </ul>
+    </article>
+
+    <article class="feat-card reveal">
+      <span class="feat-ico">🧠</span>
+      <h3>AI Note Taker</h3>
+      <p>Structured notes from meetings, lectures and webinars — ready to export into your knowledge base.</p>
+      <ul>
+        <li>Chapters, action items, highlights</li>
+        <li>Custom note templates</li>
+        <li>Export to Notion or Obsidian</li>
+      </ul>
+    </article>
+
+    <article class="feat-card reveal">
+      <span class="feat-ico">🖼️</span>
+      <h3>AI Thumbnail Generator</h3>
+      <p>Eye-catching covers built from your own footage, tuned for the click.</p>
+      <ul>
+        <li>Face-aware compositions</li>
+        <li>Title text overlays</li>
+        <li>Variant testing</li>
+      </ul>
+    </article>
+
+    <article class="feat-card reveal">
+      <span class="feat-ico">📐</span>
+      <h3>AI Reframe &amp; Captions</h3>
+      <p>Keep the speaker centered in 9:16 while animated captions burn in every word.</p>
+      <ul>
+        <li>Subject tracking</li>
+        <li>Brand kit fonts &amp; styles</li>
+        <li>Burned-in or sidecar subtitles</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<!-- ===== Solutions tabs ===== -->
+<section class="section solutions" id="solutions">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">SOLUTIONS FOR EVERY TEAM</span>
+      <h2>Built for the people who ship video daily</h2>
+    </div>
+
+    <div class="tabs" id="solutionTabs">
+      <div class="tab-list" role="tablist">
+        <button class="tab active" role="tab" data-tab="marketers">Marketers</button>
+        <button class="tab" role="tab" data-tab="streamers">Streamers</button>
+        <button class="tab" role="tab" data-tab="podcasters">Podcasters</button>
+        <button class="tab" role="tab" data-tab="gamers">Gamers</button>
+      </div>
+
+      <div class="tab-panels">
+        <div class="tab-panel active" data-panel="marketers">
+          <div class="tab-copy">
+            <h3>Turn one recording into a month of content</h3>
+            <p>Turn webinars, product demos, and customer stories into channel-ready content with AI clipping, captions, titles, descriptions, and scheduling.</p>
+            <ul class="check-list">
+              <li>Batch content creation — a digital asset library from one upload</li>
+              <li>30+ platform-ready clips per recording</li>
+              <li>Up to 50 scheduled auto-publishes per day on Pro</li>
+            </ul>
+            <a class="btn btn-outline" href="pricing.html">See plans</a>
+          </div>
+          <div class="tab-visual v1"><span>01</span><p>Batch Content Creation</p></div>
+        </div>
+
+        <div class="tab-panel" data-panel="streamers">
+          <div class="tab-copy">
+            <h3>Go live, stay clipped</h3>
+            <p>Find standout moments from live streams in real time, create captioned and reframed clips instantly, and publish highlights while you’re still live.</p>
+            <ul class="check-list">
+              <li>Real-time moment detection from your stream feed</li>
+              <li>Auto-reframe to vertical with captions</li>
+              <li>Share to Shorts, TikTok and Reels in one click</li>
+            </ul>
+            <a class="btn btn-outline" href="pricing.html">See plans</a>
+          </div>
+          <div class="tab-visual v2"><span>02</span><p>Live Moment Detection</p></div>
+        </div>
+
+        <div class="tab-panel" data-panel="podcasters">
+          <div class="tab-copy">
+            <h3>Every episode, fully repurposed</h3>
+            <p>Turn every episode into searchable transcripts, timestamped summaries, quotable moments, and social-ready shorts with a video summarizer.</p>
+            <ul class="check-list">
+              <li>Speaker-labelled transcripts with clickable timestamps</li>
+              <li>Quote cards pulled from the strongest beats</li>
+              <li>Show-notes drafts for every episode</li>
+            </ul>
+            <a class="btn btn-outline" href="pricing.html">See plans</a>
+          </div>
+          <div class="tab-visual v3"><span>03</span><p>Episode Repurposing</p></div>
+        </div>
+
+        <div class="tab-panel" data-panel="gamers">
+          <div class="tab-copy">
+            <h3>Never scrub a VOD again</h3>
+            <p>Detect high-impact plays and reactions, create vertical highlights, and share them across YouTube Shorts, TikTok, and Reels with AI gaming clips.</p>
+            <ul class="check-list">
+              <li>Clutch plays, hype moments and reactions surfaced automatically</li>
+              <li>Search any moment from hours of VOD instantly</li>
+              <li>Works with Twitch, YouTube, Kick, Medal and more</li>
+            </ul>
+            <a class="btn btn-outline" href="pricing.html">See plans</a>
+          </div>
+          <div class="tab-visual v4"><span>04</span><p>Highlight Reel Engine</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Testimonials ===== -->
+<section class="section testimonials" id="testimonials">
+  <div class="container section-head">
+    <span class="eyebrow">LOVED BY CREATORS</span>
+    <h2>Trusted by 5M+ happy creators</h2>
+    <p>We empower creators worldwide to repurpose long-form video into engaging shorts in minutes. Here’s what they say.</p>
+  </div>
+
+  <div class="container">
+    <div class="slider" id="testimonialSlider">
+      <div class="slider-viewport">
+        <div class="slider-track" id="sliderTrack">
+          <figure class="quote-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>“I started making viral shorts with WayinVideo, and I am already seeing real revenue from my channels. The AI Clipping picks out the most engaging parts automatically, so I can focus on scaling my business.”</blockquote>
+            <figcaption><span class="avatar">F</span><div><strong>Florida</strong><small>Faceless channel operator</small></div></figcaption>
+          </figure>
+          <figure class="quote-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>“As a total beginner I was intimidated by video editing, but WayinVideo made it so easy. I upload my long videos and the AI does the heavy lifting to create perfect clips for TikTok and Reels.”</blockquote>
+            <figcaption><span class="avatar">E</span><div><strong>Emily Watson</strong><small>Creator</small></div></figcaption>
+          </figure>
+          <figure class="quote-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>“The AI thumbnail generator is a game changer for my channel growth. It creates eye-catching covers that actually get people to click — my CTR increased by 50%+.”</blockquote>
+            <figcaption><span class="avatar">G</span><div><strong>Growth Eye</strong><small>YouTube network</small></div></figcaption>
+          </figure>
+          <figure class="quote-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>“On average it saves me 6–8 hours every week, which I can now spend on actual editing, refining storytelling, or taking on more projects.”</blockquote>
+            <figcaption><span class="avatar">R</span><div><strong>Rohit Gupta</strong><small>Video editor</small></div></figcaption>
+          </figure>
+          <figure class="quote-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>“With WayinVideo’s Find Moments feature it’s instant. You just type it and the AI literally shows you where it happens. Whether you’re editing tutorials, AMVs or commentary, this tool saves hours.”</blockquote>
+            <figcaption><span class="avatar">W</span><div><strong>Wizzy Tutorials</strong><small>YouTube educator</small></div></figcaption>
+          </figure>
+          <figure class="quote-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>“That video has over 200,000 views right now, and all I had to do was paste my Twitch or YouTube link. In just minutes it found all of the most viral moments for me.”</blockquote>
+            <figcaption><span class="avatar">B</span><div><strong>Best in Class</strong><small>Streamer</small></div></figcaption>
+          </figure>
+          <figure class="quote-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>“As a gamer the hardest part isn’t editing — it’s finding the best moments inside hours of VOD. WayinVideo automatically surfaces clutch plays, hype moments and reactions.”</blockquote>
+            <figcaption><span class="avatar">J</span><div><strong>JoshBarracks</strong><small>Content creator</small></div></figcaption>
+          </figure>
+          <figure class="quote-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>“I used to waste twenty minutes scrubbing timelines just to find ONE clip. Now I just type what I’m looking for… and it jumps straight to it.”</blockquote>
+            <figcaption><span class="avatar">J</span><div><strong>johngoldcreates</strong><small>Editor &amp; filmmaker</small></div></figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="slider-controls">
+        <button class="slider-btn" id="slidePrev" aria-label="Previous testimonials">‹</button>
+        <div class="slider-dots" id="sliderDots"></div>
+        <button class="slider-btn" id="slideNext" aria-label="Next testimonials">›</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Pricing teaser ===== -->
+<section class="section teaser">
+  <div class="container teaser-box reveal">
+    <div class="teaser-copy">
+      <span class="eyebrow">FLEXIBLE PRICING</span>
+      <h2>Start free. Scale when you’re ready.</h2>
+      <p>100 one-time credits on the Free plan, 65% off annual Pro, and custom credits for teams. No credit card required.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary btn-lg" href="pricing.html">View pricing</a>
+        <a class="btn btn-outline btn-lg" href="pricing.html#compare">Compare plans</a>
+      </div>
+    </div>
+    <div class="teaser-plans">
+      <div class="mini-plan"><strong>Free</strong><span class="mini-price">$0</span><small>100 one-time credits</small></div>
+      <div class="mini-plan featured"><strong>Pro</strong><span class="mini-price">$9.58<small>/mo</small></span><small>12,000 credits / year</small></div>
+      <div class="mini-plan"><strong>Scale</strong><span class="mini-price">$69.99<small>/mo</small></span><small>72,000 credits / year</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="section faq" id="faq">
+  <div class="container faq-wrap">
+    <div class="section-head left">
+      <span class="eyebrow">FAQ</span>
+      <h2>Frequently asked questions</h2>
+      <p>Everything you need to know before you press record.</p>
+      <a class="btn btn-outline" href="pricing.html#faq">Pricing FAQ</a>
+    </div>
+
+    <div class="accordion" data-accordion>
+      <div class="acc-item">
+        <button class="acc-q" aria-expanded="false">What can I do with WayinVideo?<span class="acc-ico"></span></button>
+        <div class="acc-a"><p>Paste a video link or upload a file and WayinVideo will clip, edit by transcript, summarize, transcribe, caption, reframe, translate and publish it — all from one workspace.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q" aria-expanded="false">Which links can I import?<span class="acc-ico"></span></button>
+        <div class="acc-a"><p>YouTube, Vimeo, TikTok, Instagram, Facebook, X, Twitch, Dailymotion, Medal, Rumble, Kick, Zoom, Loom, Google Drive and Dropbox.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q" aria-expanded="false">What file formats are supported?<span class="acc-ico"></span></button>
+        <div class="acc-a"><p>You can upload MP4, MOV and WebM files. Paid plans accept local files up to 30 GB each with bulk import.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q" aria-expanded="false">How many languages does it support?<span class="acc-ico"></span></button>
+        <div class="acc-a"><p>100+ languages for summaries, transcripts, subtitles and translation, with speaker labels on paid plans.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q" aria-expanded="false">Is it really free to start?<span class="acc-ico"></span></button>
+        <div class="acc-a"><p>Yes. New accounts get 100 welcome credits, no credit card required, and exports never carry a WayinVideo watermark.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q" aria-expanded="false">How much does a video cost in credits?<span class="acc-ico"></span></button>
+        <div class="acc-a"><p>Clipping and AI Notes cost about 1 credit per input video minute. Find Moments after a clipping task costs 0.5 credits per input minute. Basic manual edits — trimming, text overlays — use no credits.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Final CTA ===== -->
+<section class="section final-cta">
+  <div class="container cta-box reveal">
+    <div class="cta-glow"></div>
+    <h2>Create more. Understand faster. Share everywhere.</h2>
+    <p>Turn every long-form recording into clips, summaries, transcripts, captions and platform-ready content with WayinVideo’s AI video workspace.</p>
+    <div class="hero-actions center">
+      <a class="btn btn-primary btn-lg" href="pricing.html">Start Creating Free</a>
+      <a class="btn btn-outline btn-lg" href="pricing.html">Talk to Sales</a>
+    </div>
+    <small class="cta-note">100 free welcome credits · No credit card required</small>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== Footer ===== -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5l8 14 8-14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        Wayin<span class="brand-thin">Video</span>
+      </a>
+      <p>The video-native AI platform for creators and teams. Discover, create, share.</p>
+      <div class="socials">
+        <a href="#" aria-label="X">𝕏</a>
+        <a href="#" aria-label="YouTube">▶</a>
+        <a href="#" aria-label="Discord">◉</a>
+        <a href="#" aria-label="LinkedIn">in</a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Product</h4>
+      <a href="studio.html">AI Video Generator</a>
+      <a href="studio.html#editor">AI Video Editor</a>
+      <a href="studio.html#clips">Clip Maker</a>
+      <a href="studio.html#summarizer">Video Summarizer</a>
+      <a href="studio.html#v2t">Video to Text</a>
+      <a href="studio.html#notes">AI Note Taker</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Solutions</h4>
+      <a href="#solutions">Marketers</a>
+      <a href="#solutions">Streamers</a>
+      <a href="#solutions">Podcasters</a>
+      <a href="#solutions">Gamers</a>
+      <a href="#showcase">Showcase</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="pricing.html">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a href="#">Help Center</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Careers</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="#">Terms of Service</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Cookie Policy</a>
+      <a href="#">Security</a>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <p>© <span id="year">2026</span> WayinVideo. All rights reserved.</p>
+    <p class="foot-note">Built as a design study — UI inspired by WayinVideo, restyled in green, blue &amp; black.</p>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
